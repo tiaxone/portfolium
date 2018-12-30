@@ -1,7 +1,14 @@
-.card-containter{
-  margin:0 auto;
-  .project-card{
-    max-width: 300px;
-    margin-bottom: 10px;
+.card-list-page {
+  text-align: center;
+  mat-spinner{
+    margin: 0 auto;
+  }
+  .card-containter{
+    text-align: left;
+    margin:0 auto;
+    .project-card{
+      max-width: 300px;
+      margin-bottom: 10px;
+    }
   }
 }

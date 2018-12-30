@@ -18,8 +18,7 @@ export class PortfoliumnDataService {
      );
   }
   private handleError(err: HttpErrorResponse) {
-
-    return throwError('error found'); // update to be more robust
+    return throwError('error found');
   }
 
 }

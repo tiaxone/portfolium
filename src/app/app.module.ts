@@ -10,6 +10,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { InfiniteScrollModule } from 'ngx-infinite-scroll';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,9 +24,11 @@ import { InfiniteScrollModule } from 'ngx-infinite-scroll';
     BrowserAnimationsModule,
     FlexLayoutModule,
     HttpClientModule,
-    InfiniteScrollModule
+    InfiniteScrollModule,
+    MatProgressSpinnerModule
+
   ],
-  providers: [PortfoliumnDataService], // Declare a singleton instances for depenedency injection
+  providers: [PortfoliumnDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

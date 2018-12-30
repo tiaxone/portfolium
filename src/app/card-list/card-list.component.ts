@@ -8,10 +8,11 @@ import { ProjectCard } from '../projectCard';
 })
 export class CardListComponent implements OnInit {
   offset = 0;
-  limit = 24;
+  limit = 12;
   cards = Array<ProjectCard>();
-  scrollThrottle = 200;
-  scrollDistance = 0;
+  scrollThrottle = 100;
+  scrollDistance = 2;
+  showSpinner = true;
   constructor(private service: PortfoliumnDataService) {
   }
   ngOnInit() {
@@ -21,6 +22,7 @@ export class CardListComponent implements OnInit {
   getProjectData() {
     this.service.getProjectData(this.limit, this.offset).subscribe( projects => {
          this.cards = this.cards.concat(projects);
+         this.showSpinner = false;
     });
     this.offset = this.offset + this.limit;
   }

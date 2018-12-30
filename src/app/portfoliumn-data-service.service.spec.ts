@@ -16,9 +16,7 @@ describe('PortfoliumnDataService', () => {
   describe('#getProjectData()', () => {
     it('should return an list of project data', inject([PortfoliumnDataService],
     (service: PortfoliumnDataService) => {
-      expect(service.getProjectData()).toBeTruthy();
+      expect(service.getProjectData(1, 2)).toBeTruthy();
     }));
-
-
   });
 });

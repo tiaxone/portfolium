@@ -2,6 +2,12 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.2.
 
+# Npm packages 
+
+"ngx-infinite-scroll": "^6.0.1" - Was used to accomplish the infinite scroll
+"@angular/flex-layout": "^7.0.0-beta.22" - Was used to get a flex box implemntation of the cards
+"@angular/material": "^7.2.0" - Was used as a design framework
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

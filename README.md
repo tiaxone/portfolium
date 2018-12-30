@@ -2,6 +2,9 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.2.
 
+## 
+Live site - http://christopherlawerncerobinson.com/
+
 ## Npm packages 
 
 "ngx-infinite-scroll": "^6.0.1" - Was used to accomplish the infinite scroll<br/>

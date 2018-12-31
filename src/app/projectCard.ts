@@ -7,6 +7,5 @@ export class ProjectCard {
 
   constructor(values: Object = {}) {
     Object.assign(this, values);
-    console.log('does this work?');
   }
 }

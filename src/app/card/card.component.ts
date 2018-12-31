@@ -16,11 +16,11 @@ export class CardComponent implements OnInit {
   ngOnInit() {
     this.title = this.projectCard.title ? this.projectCard.title : 'No title available';
     this.description = this.projectCard.description ? this.projectCard.description : 'No description available';
-    this.coverImage = this.projectCard.profile.cover ? this.projectCard.profile.cover.dynamic_params
+    this.coverImage = this.projectCard.profile ? this.projectCard.profile.cover.dynamic_params
       .replace('{function}', 'fit')
       .replace('{size}', '300x130')
       .replace('{optional_parameters}', 'ccccccc') : 'No image available';
-    this.avatar = this.projectCard.profile.avatar ? this.projectCard.profile.avatar.url : 'No image';
-    this.username = this.projectCard.profile.username ? this.projectCard.profile.username : 'No image';
+    this.avatar = this.projectCard.profile ? this.projectCard.profile.avatar.url : 'No image';
+    this.username = this.projectCard.profile ? this.projectCard.profile.username : 'No image';
   }
 }

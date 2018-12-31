@@ -1,14 +1,30 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { CardListComponent } from './card-list/card-list.component';
-
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { InfiniteScrollModule } from 'ngx-infinite-scroll';
+import { CardComponent } from './card/card.component';
+import { HttpClientModule } from '@angular/common/http';
+import { MatCardModule } from '@angular/material/card';
+import { FlexLayoutModule } from '@angular/flex-layout';
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
         AppComponent,
-        CardListComponent
+        CardListComponent,
+        CardComponent
       ],
+      imports: [
+        MatToolbarModule,
+        MatProgressSpinnerModule,
+        InfiniteScrollModule,
+        MatCardModule,
+        FlexLayoutModule,
+        HttpClientModule,
+
+      ]
     }).compileComponents();
   }));
 

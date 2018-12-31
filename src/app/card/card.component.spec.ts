@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { CardComponent } from './card.component';
+import { MatCardModule } from '@angular/material/card';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { ProjectCard } from '../projectCard';
 
 describe('CardComponent', () => {
   let component: CardComponent;
@@ -8,7 +10,13 @@ describe('CardComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CardComponent ]
+      declarations: [
+        CardComponent
+       ],
+       imports: [
+        MatCardModule,
+        FlexLayoutModule,
+       ]
     })
     .compileComponents();
   }));
@@ -16,6 +24,7 @@ describe('CardComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(CardComponent);
     component = fixture.componentInstance;
+    component.projectCard = new ProjectCard();
     fixture.detectChanges();
   });
 

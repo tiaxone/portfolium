@@ -1,9 +1,12 @@
 import { TestBed, async, inject } from '@angular/core/testing';
 import { PortfoliumnDataService } from './portfoliumn-data-service.service';
-
+import { HttpClientModule } from '@angular/common/http';
 describe('PortfoliumnDataService', () => {
   beforeEach(() => TestBed.configureTestingModule({
-      providers: [PortfoliumnDataService]
+      providers: [PortfoliumnDataService],
+      imports: [
+        HttpClientModule
+      ]
   }));
   it('should...', inject( [PortfoliumnDataService], (service: PortfoliumnDataService) => { // Test service Injection
     expect(service).toBeTruthy();

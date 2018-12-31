@@ -11,7 +11,7 @@ export class CardListComponent implements OnInit {
   limit = 12;
   cards = Array<ProjectCard>();
   scrollThrottle = 100;
-  scrollDistance = 2;
+  scrollDistance = 3;
   showSpinner = true;
   constructor(private service: PortfoliumnDataService) {
   }
